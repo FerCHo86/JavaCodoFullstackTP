@@ -1,0 +1,10 @@
+El proyecto integrador del curso java FullStack de Codo incorpora un programa de validación de uuarios a la página front end del curso:
+ 	- Front end desarrollado con HTML, CSS y bootstrap, con integración de funcionalidades de JS dentro del código html y en archivo .js 
+	separadosRequiere de lo cración de una base de nombre 
+	- Backend Realizado en Springboot, integra la habilitación de un servidor de prueba en el puerto localhost:8080
+	- Para correr adecuadamente requiere la creación de una bae de datos SQL en el puerto localhost:3306 lamada CodoLoginBase, puede correrse en MySQL
+	el query adjunto de nombre Database.sql
+
+Autor Luis Fernando Bargnia
+14/07/2022
+

@@ -1,0 +1,88 @@
+.iconSize{
+    width: 6rem;
+    height: 3rem;
+}
+.bg-gray-100{
+    background-color:  #343a40;
+
+}
+.sideMargins{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.bgColor{
+    color: white;
+    border-color: white;
+    float: right;
+}
+.imgFilter{
+    filter:brightness(0.6);
+    
+}
+.cardTextStyling{
+    max-height:12rem; 
+    overflow:hidden;
+}
+.cardshadow:hover{
+    box-shadow:2px 2px 2px 1px  #343a40;
+}
+.cardTextStyling:hover{
+    max-height: fit-content;
+    
+}
+.webPageBar{
+    height: 4rem;
+    visibility:visible;
+}
+.webPageHiden{
+    visibility:visible;
+}
+.cellPhoneBar{
+    display: none;
+    height: 4rem;
+}
+.cellPhoneBar2{
+    display: none;
+    visibility: hidden;
+}
+
+
+span:after {
+    width: 0;
+    height: 0;
+    border: 0.313em solid transparent;
+    border-bottom: none;
+    border-top-color: #efa585;
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    right: -0.313em;
+  }
+.changedirexion{
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 1000px){
+    .webPageBar{
+        display: none;
+        visibility:hidden;
+    }
+    .cellPhoneBar{
+        visibility:visible;
+        display: block;
+    }
+    .cellPhoneBar2{
+        visibility:visible;
+        display: block;
+    }
+    .webPageHiden{
+        display: none;
+        visibility:hidden;
+    }
+
+    .changedirexion{
+        display: flex;
+        flex-direction: column;
+    }
+}

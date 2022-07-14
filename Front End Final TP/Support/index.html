@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+
+    <!-- por CDN(CONTENT DELIVERY NETWORK): envio de datos por la red -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Dropdowns</h2>
+        <p> La clase .dropdown se usa para indicar un menú desplegable. </p>
+        <p> Utilice la clase .dropdown-menu para crear realmente el menú 
+            desplegable. </p>
+        <p> Para abrir el menú desplegable, use un botón o un enlace con una 
+            clase de .dropdown-toggle y data-toggle = "dropdown". </p>                                          
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </div>
+
+        <hr>
+
+        <h2>Dropdowns</h2>
+        <p> La clase .dropdown-divider se usa para separar enlaces dentro del 
+            menú desplegable con una línea horizontal delgada: </p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Otro link</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Dropdowns</h2>
+        <p> La clase .dropdown-header se usa para agregar encabezados dentro 
+            del menú desplegable: </p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+            </button>
+            <div class="dropdown-menu">
+            <h5 class="dropdown-header">Dropdown header</h5>
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+            <h5 class="dropdown-header">Dropdown header</h5>
+            <a class="dropdown-item" href="#">Otro link</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Dropdowns</h2>
+        <p> Agregue la clase .dropright junto al menú desplegable para alinearlo
+            a la derecha. Tenga en cuenta que el signo de 
+            intercalación / flechas se agrega automáticamente: </p>
+        <div class="dropdown dropright">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropright button
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+
+        <h2>Dropdowns</h2>
+        <p> Agregue la clase .dropdown-menu-right a .dropdown-menu para alinear 
+            a la derecha el menú desplegable. </p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Botón desplegable ancho para demostrar este ejemplo
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+
+        <hr>
+
+        <h2>Dropdowns</h2>
+        <p> La clase .dropup hace que el menú desplegable se expanda hacia 
+            arriba en lugar de hacia abajo: </p>
+        <div class="dropup">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropup button
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2> Grupos de botones anidados </h2>
+        <p> Grupos de botones de Nest para crear menús desplegables: </p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Sony
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tablet</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2> Botones desplegables divididos </h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2> Grupo de botones verticales con menú desplegable </h2>
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Sony
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Tablet</a>
+            <a class="dropdown-item" href="#">Smartphone</a>
+        </div>
+        </div>
+    </div>
+
+</div>    
+</body>
+
+</html>
